@@ -15,7 +15,7 @@ body {
     gap: 32px;
 }
 
-.container-top, .nav, .banner-wrapper, .info, .info-wrapper, .ad-wrapper, .quote-wrapper, .footer {
+.container-top, .nav, .banner-wrapper, .info, .info-wrapper, .ad-wrapper, .quote, .footer {
     display: flex;
     width: 75%;
     margin: 0 auto;
@@ -96,4 +96,19 @@ button {
 
 .banner .text {
     margin-bottom: 10px;
+}
+
+.quote-wrapper {
+    background-color: #E5E7EB;
+    width: 100%;
+    padding: 32px;
+}
+
+.quote {
+    flex-direction: column;
+}
+
+.footer {
+    padding: 16px;
+    color:#E5E7EB;
 }

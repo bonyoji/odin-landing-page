@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    gap: 32px;
 }
 
 .container-top, .nav, .banner-wrapper, .info, .info-wrapper, .ad-wrapper, .quote-wrapper, .footer {
@@ -29,7 +30,7 @@ ul {
     padding: 0;
 }
 
-a {
+a, .banner .text {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
@@ -51,10 +52,8 @@ button {
 }
 
 .banner-wrapper img {
-    width: 50%;
-    height: auto;
-    border: solid rebeccapurple;
     background-color: #a9a9a9;
+    width: 45%;
 }
 
 .info-item img{
@@ -75,12 +74,26 @@ button {
 }
 
 .banner-wrapper {
-    padding: 32px;
-    border: solid rebeccapurple;
+    padding: 64px;
+    justify-content: space-between;
 }
 
 .banner {
-    flex: 1;
-    border: solid rebeccapurple;
+    width: 45%;
+    flex-wrap: wrap;
 }
 
+.header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.banner .text {
+    margin-bottom: 10px;
+}

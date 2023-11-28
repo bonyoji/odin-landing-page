@@ -35,7 +35,7 @@ ul {
     padding: 0;
 }
 
-a, .banner .text {
+a, .banner .text, .ad .text , button{
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
@@ -49,7 +49,6 @@ button, .ad-wrapper {
 button {
     width: 100px;
     padding: 4px 8px;
-    color: #E5E7EB;
 }
 
 .banner-wrapper img {
@@ -150,6 +149,18 @@ button {
 .quote .quote-name {
     text-align: end;
     font-weight: bolder;
+    font-size: 24px;
+}
+
+/* Ad Layout */
+.ad-wrapper {
+    padding: 32px 0;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.ad .logo {
+    margin-bottom: 8px;
 }
 
 /* Footer Layout */

@@ -11,16 +11,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 32px;
+    gap: 52px;
 }
 
 /* Add flex to wrappers, center content */
-.container-top, .nav, .banner-wrapper, .info, .info-wrapper, .ad-wrapper, .quote, .footer {
+.container-top, .info-wrapper, .ad-wrapper, .quote-wrapper, .footer {
     display: flex;
+    flex: 1;
+}
+
+.nav, .banner-wrapper, .info-wrapper, .quote, .ad {
     width: 968px;
     margin: 0 auto;
-    justify-content: center;
-    flex: 1;
 }
 
 /* Color and Styling */
@@ -38,11 +40,6 @@ a, .banner .text {
     font-size: 18px;
 }
 
-.container-top, .footer {
-    background-color: #1F2937;
-    width: 100%;
-}
-
 button, .ad-wrapper {
     background-color: #3882F6;
     border-radius: 8px;
@@ -51,6 +48,7 @@ button, .ad-wrapper {
 button {
     width: 100px;
     padding: 4px 8px;
+    color: #E5E7EB;
 }
 
 .banner-wrapper img {
@@ -60,25 +58,31 @@ button {
 
 .info-item img{
     border: solid #3882F6;
-    border-radius: 4px;
+    border-radius: 6px;
     min-width: 150px;
     min-height: 150px;
+}
+
+.container-top, .footer {
+    display: flex;
+    background-color: #1F2937;
+    width: 100%;
 }
 
 /* Layout for content */
 .container-top {
     flex-direction: column;
     gap: 10px;
+    padding: 32px 0;
 }
 
-.nav {
-    padding: 16px;
+.nav, .banner-wrapper {
+    display: flex;
     justify-content: space-between;
 }
 
 .banner-wrapper {
-    padding: 32px;
-    justify-content: space-between;
+    padding: 32px 0;
 }
 
 .banner {
@@ -106,6 +110,7 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    text-align: center;
 }
 
 .title {
@@ -115,19 +120,18 @@ button {
 }
 
 .info {
-    gap: 32px;
+    display: flex;
+    gap: 52px;
 }
 
 .info-item {
-    flex-wrap: wrap;
-    width: 150px;
+    max-width: 150px;
 }
 
 /* Quote Layout */
 .quote-wrapper {
     background-color: #E5E7EB;
     width: 100%;
-    padding: 32px;
 }
 
 .quote {
@@ -136,6 +140,5 @@ button {
 
 /* Footer Layout */
 .footer {
-    padding: 16px;
     color:#E5E7EB;
 }
